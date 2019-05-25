@@ -17,7 +17,7 @@ from freqtrade.worker import Worker
 logger = logging.getLogger('freqtrade')
 
 
-def main(sysargv: List[str]) -> None:
+def main(sysargv: List[str] = None) -> None:
     """
     This function will initiate the bot and start the trading loop.
     :return: None
@@ -57,4 +57,4 @@ def main(sysargv: List[str]) -> None:
 
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    main()
