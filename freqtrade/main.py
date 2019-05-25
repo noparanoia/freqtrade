@@ -22,6 +22,7 @@ def main(sysargv: List[str]) -> None:
     This function will initiate the bot and start the trading loop.
     :return: None
     """
+    set_loggers()
     arguments = Arguments(
         sysargv,
         'Free, open source crypto trading bot'
@@ -56,5 +57,4 @@ def main(sysargv: List[str]) -> None:
 
 
 if __name__ == '__main__':
-    set_loggers()
     main(sys.argv[1:])
